@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/iron"
+    },
+    {
+      "tag": "forge:dusts/manganese"
+    },
+    {
+      "tag": "forge:dusts/manganese"
+    }
+  ],
+  "result": {
+    "item": "neoforged_metals:steel_dust",
+    "count": 2
+  }
+}

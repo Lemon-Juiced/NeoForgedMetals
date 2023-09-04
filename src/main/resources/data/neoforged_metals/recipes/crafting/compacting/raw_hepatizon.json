@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:raw_materials/hepatizon"
+    }
+  },
+  "result": {
+    "item": "neoforged_metals:raw_hepatizon_block",
+    "count": 1
+  }
+}

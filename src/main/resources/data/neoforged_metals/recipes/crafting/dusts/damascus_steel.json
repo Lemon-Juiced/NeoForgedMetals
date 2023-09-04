@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/bronze"
+    },
+    {
+      "tag": "forge:dusts/iron"
+    }
+  ],
+  "result": {
+    "item": "neoforged_metals:damascus_steel_dust",
+    "count": 2
+  }
+}

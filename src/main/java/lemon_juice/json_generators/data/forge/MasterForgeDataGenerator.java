@@ -10,6 +10,7 @@ public class MasterForgeDataGenerator {
         IngotsGenerator.ingotsGenerator();
         NuggetsGenerator.nuggetsGenerator();
         OresGenerator.oresGenerator();
+        RawMaterialsGenerator.rawMaterialsGenerator();
         StorageBlocksGenerator.storageBlocksGenerator();
     }
 }

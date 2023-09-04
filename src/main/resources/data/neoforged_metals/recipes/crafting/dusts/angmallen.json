@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/iron"
+    },
+    {
+      "tag": "forge:dusts/gold"
+    }
+  ],
+  "result": {
+    "item": "neoforged_metals:angmallen_dust",
+    "count": 2
+  }
+}

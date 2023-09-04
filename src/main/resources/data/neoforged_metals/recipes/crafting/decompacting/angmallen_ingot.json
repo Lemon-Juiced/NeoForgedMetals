@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "forge:ingots/angmallen"
+        }
+    ],
+    "result": {
+        "item": "neoforged_metals:angmallen_nugget",
+        "count": 9
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:dusts/hepatizon"
+  },
+  "result": "neoforged_metals:hepatizon_ingot",
+  "experience": 0.1,
+  "cookingtime": 100
+}

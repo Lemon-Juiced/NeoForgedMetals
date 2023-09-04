@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "forge:ingots/damascus_steel"
+        }
+    ],
+    "result": {
+        "item": "neoforged_metals:damascus_steel_nugget",
+        "count": 9
+    }
+}
