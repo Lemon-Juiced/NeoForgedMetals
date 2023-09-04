@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:dusts/copper",
+    "#forge:dusts/gold",
+    "#forge:dusts/iron",
+    "#forge:dusts/netherite",
+    "#forge:dusts/manganese",
+    "#forge:dusts/tin",
+    "#forge:dusts/angmallen",
+    "#forge:dusts/bronze",
+    "#forge:dusts/damascus_steel",
+    "#forge:dusts/hepatizon",
+    "#forge:dusts/steel"
+  ]
+}

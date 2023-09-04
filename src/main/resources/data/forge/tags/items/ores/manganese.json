@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:deepslate_manganese_ore",
+    "neoforged_metals:manganese_ore"
+  ]
+}

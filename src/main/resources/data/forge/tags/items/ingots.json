@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ingots/manganese",
+    "#forge:ingots/tin",
+    "#forge:ingots/angmallen",
+    "#forge:ingots/bronze",
+    "#forge:ingots/damascus_steel",
+    "#forge:ingots/hepatizon",
+    "#forge:ingots/steel"
+  ]
+}

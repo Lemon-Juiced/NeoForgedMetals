@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:deepslate_tin_ore",
+    "neoforged_metals:tin_ore"
+  ]
+}

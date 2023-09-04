@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/manganese",
+    "#forge:ores/tin"
+  ]
+}

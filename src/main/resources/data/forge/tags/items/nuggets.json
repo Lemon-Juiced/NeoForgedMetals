@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:nuggets/copper",
+    "#forge:nuggets/netherite",
+    "#forge:nuggets/manganese",
+    "#forge:nuggets/tin",
+    "#forge:nuggets/angmallen",
+    "#forge:nuggets/bronze",
+    "#forge:nuggets/damascus_steel",
+    "#forge:nuggets/hepatizon",
+    "#forge:nuggets/steel"
+  ]
+}
