@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:raw_tin_block",
+    "neoforged_metals:tin_ore",
+    "neoforged_metals:deepslate_tin_ore",
+    "neoforged_metals:tin_block",
+    "neoforged_metals:bronze_block"
+  ]
+}

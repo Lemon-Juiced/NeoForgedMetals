@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:manganese_ingot",
+    "neoforged_metals:tin_ingot",
+    "neoforged_metals:angmallen_ingot",
+    "neoforged_metals:bronze_ingot",
+    "neoforged_metals:damascus_steel_ingot",
+    "neoforged_metals:hepatizon_ingot",
+    "neoforged_metals:steel_ingot"
+  ]
+}

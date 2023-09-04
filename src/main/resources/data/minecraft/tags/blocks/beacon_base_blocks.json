@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:manganese_block",
+    "neoforged_metals:tin_block",
+    "neoforged_metals:angmallen_block",
+    "neoforged_metals:bronze_block",
+    "neoforged_metals:damascus_steel_block",
+    "neoforged_metals:hepatizon_block",
+    "neoforged_metals:steel_block"
+  ]
+}
