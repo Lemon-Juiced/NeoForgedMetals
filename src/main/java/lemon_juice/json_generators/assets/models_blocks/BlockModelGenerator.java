@@ -1,4 +1,4 @@
-package lemon_juice.json_generators.models_blocks;
+package lemon_juice.json_generators.assets.models_blocks;
 
 import lemon_juice.metal_resources.MetalResource;
 import lemon_juice.metal_resources.MetalResourcesGenerator;
@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class BlockModelGenerator {
-    public static void main(String[] args){
+    public static void blockModelGenerator(){
         ArrayList<MetalResource> metalResources = MetalResourcesGenerator.generateMetalResources();
         for (int i = 0; i < metalResources.size(); i++) {
             MetalResource currentIndex = metalResources.get(i);

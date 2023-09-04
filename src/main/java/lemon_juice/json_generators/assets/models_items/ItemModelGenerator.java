@@ -1,4 +1,4 @@
-package lemon_juice.json_generators.models_items;
+package lemon_juice.json_generators.assets.models_items;
 
 import lemon_juice.metal_resources.MetalResource;
 import lemon_juice.metal_resources.MetalResourcesGenerator;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Generates Item modem JSONs for all metals
  */
 public class ItemModelGenerator {
-    public static void main(String[] args){
+    public static void itemModelGenerator(){
         ArrayList<MetalResource> metalResources = MetalResourcesGenerator.generateMetalResources();
         for (int i = 0; i < metalResources.size(); i++) {
             MetalResource currentIndex = metalResources.get(i);
