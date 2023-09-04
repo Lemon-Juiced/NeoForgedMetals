@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "layer0": {
+            "model": "minecraft:block/deepslate"
+        },
+        "layer1": {
+            "model": "neoforged_metals:block/manganese_ore"
+        }
+    }
+}

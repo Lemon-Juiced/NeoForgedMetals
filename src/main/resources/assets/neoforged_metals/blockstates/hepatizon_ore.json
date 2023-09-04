@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "layer0": {
+             "model": "minecraft:block/stone"
+        },
+        "layer1": {
+            "model": "neoforged_metals:block/hepatizon_ore"
+        }
+    }
+}
