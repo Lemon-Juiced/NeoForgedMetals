@@ -5,6 +5,10 @@ import lemon_juice.json_generators.data.minecraft.MasterMinecraftDataGenerator;
 import lemon_juice.json_generators.data.neoforged_metals.MasterNeoForgedMetalsDataGenerator;
 
 public class MasterDataGenerator {
+    public static void main(String[] args) {
+        masterDataGenerator();
+    }
+
     public static void masterDataGenerator(){
         MasterForgeDataGenerator.masterForgeDataGenerator();
         MasterMinecraftDataGenerator.masterMinecraftDataGenerator();

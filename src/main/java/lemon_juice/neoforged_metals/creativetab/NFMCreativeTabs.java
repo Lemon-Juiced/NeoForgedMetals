@@ -10,9 +10,7 @@ import lemon_juice.neoforged_metals.item.custom.item.*;
 import lemon_juice.neoforged_metals.registry.ParityRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -45,25 +43,28 @@ public class NFMCreativeTabs {
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == NEOFORGED_METALS_METALS_TAB.get()) {
             for (RegistryObject<Item> item : NFMItems.ITEMS.getEntries())
-                if(item.get() instanceof IngotItem || item.get() instanceof NuggetItem || item.get() instanceof DustItem || item.get() instanceof RawMetalItem)
+                if(item.get() instanceof IngotItem ||
+                        item.get() instanceof NuggetItem ||
+                        item.get() instanceof DustItem ||
+                        item.get() instanceof RawMetalItem)
                     if(!((AbstractTooltippedItem) item.get()).getTooltipInfo().equals("vanilla")) //Filters out Vanilla Parity Items
                         event.accept(item.get());
 
             for (RegistryObject<Block> blockItem : NFMBlocks.BLOCKS.getEntries())
-                if (blockItem.get() instanceof OreBlock || blockItem.get() instanceof MetalBlock || blockItem.get() instanceof RawMetalBlock)
+                if (blockItem.get() instanceof OreBlock ||
+                        blockItem.get() instanceof MetalBlock ||
+                        blockItem.get() instanceof RawMetalBlock)
                     event.accept(blockItem.get());
         }
 
         if (event.getTab() == NEOFORGED_METALS_TOOLS_TAB.get()) {
-            /*
             for (RegistryObject<Item> item : NFMItems.ITEMS.getEntries())
-                if(item.get() instanceof IngotItem || item.get() instanceof NuggetItem || item.get() instanceof DustItem)
+                if(item.get() instanceof SwordItem ||
+                        item.get() instanceof PickaxeItem ||
+                        item.get() instanceof AxeItem ||
+                        item.get() instanceof ShovelItem ||
+                        item.get() instanceof HoeItem )
                     event.accept(item.get());
-
-            for (RegistryObject<Block> blockItem : NFMBlocks.BLOCKS.getEntries())
-                if (blockItem.get() instanceof OreBlock || blockItem.get() instanceof MetalBlock || blockItem.get() instanceof RawMetalBlock)
-                    event.accept(blockItem.get());
-            */
         }
 
         if (event.getTab() == NEOFORGED_METALS_VANILLA_PARITY_TAB.get()) {

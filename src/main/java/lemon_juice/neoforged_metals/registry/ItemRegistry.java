@@ -1,11 +1,18 @@
 package lemon_juice.neoforged_metals.registry;
 
+import lemon_juice.metal_data.statistics.MetalToolStatistic;
+import lemon_juice.metal_data.statistics.MetalToolStatisticsGenerator;
 import lemon_juice.neoforged_metals.item.NFMItems;
 import lemon_juice.neoforged_metals.item.custom.item.DustItem;
 import lemon_juice.neoforged_metals.item.custom.item.IngotItem;
 import lemon_juice.neoforged_metals.item.custom.item.NuggetItem;
 import lemon_juice.neoforged_metals.item.custom.item.RawMetalItem;
+import lemon_juice.neoforged_metals.item.custom.tool.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+
+import java.util.ArrayList;
 
 import static lemon_juice.neoforged_metals.registry.BlockRegistry.registerMetalBlockGroup;
 
@@ -44,7 +51,20 @@ public class ItemRegistry {
 
         if(!isAlloy) NFMItems.ITEMS.register("raw_" + name, () -> new RawMetalItem(new Item.Properties(), oreGroup));
 
-        if(hasTools){}
+        if(hasTools){
+            ArrayList<MetalToolStatistic> metalToolStatistics = MetalToolStatisticsGenerator.generateMetalToolStatistics();
+            for (int i = 0; i < metalToolStatistics.size(); i++) {
+                MetalToolStatistic currentIndex = metalToolStatistics.get(i);
+                if(name.equals(currentIndex.name())){
+                    Tier currentTier = TierRegistry.generateMetalTier(currentIndex);
+                    NFMItems.ITEMS.register(name + "_sword", () -> new NFMSwordItem(currentTier, (int) currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup));
+                    NFMItems.ITEMS.register(name + "_pickaxe", () -> new NFMPickaxeItem(currentTier, (int) currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup));
+                    NFMItems.ITEMS.register(name + "_axe", () -> new NFMAxeItem(currentTier, currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup));
+                    NFMItems.ITEMS.register(name + "_shovel", () -> new NFMShovelItem(currentTier, (int) currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup));
+                    NFMItems.ITEMS.register(name + "_hoe", () -> new NFMHoeItem(currentTier, (int) currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup));
+                }
+            }
+        }
         if(hasArmor){}
 
         registerMetalBlockGroup(name, oreGroup, isAlloy);

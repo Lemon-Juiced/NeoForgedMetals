@@ -1,7 +1,7 @@
 package lemon_juice.neoforged_metals.item;
 
-import lemon_juice.metal_resources.MetalResource;
-import lemon_juice.metal_resources.MetalResourcesGenerator;
+import lemon_juice.metal_data.resources.MetalResource;
+import lemon_juice.metal_data.resources.MetalResourcesGenerator;
 import lemon_juice.neoforged_metals.NeoForgedMetals;
 import lemon_juice.neoforged_metals.registry.ParityRegistry;
 import net.minecraft.world.item.Item;

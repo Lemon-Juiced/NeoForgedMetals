@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import lemon_juice.neoforged_metals.block.NFMBlocks;
 import lemon_juice.neoforged_metals.creativetab.NFMCreativeTabs;
 import lemon_juice.neoforged_metals.item.NFMItems;
+import lemon_juice.neoforged_metals.tag.NFMTags;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -46,6 +47,9 @@ public class NeoForgedMetals {
         // Register Creative Tab
         NFMCreativeTabs.register(modEventBus);
         modEventBus.addListener(NFMCreativeTabs::registerTabs);
+
+        // Register Tags
+        NFMTags.init();
 
         modEventBus.addListener(this::commonSetup);
 

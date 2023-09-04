@@ -1,4 +1,4 @@
-package lemon_juice.metal_resources;
+package lemon_juice.metal_data.resources;
 
 import java.util.ArrayList;
 

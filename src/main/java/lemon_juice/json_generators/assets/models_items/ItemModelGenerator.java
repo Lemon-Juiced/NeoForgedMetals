@@ -1,7 +1,7 @@
 package lemon_juice.json_generators.assets.models_items;
 
-import lemon_juice.metal_resources.MetalResource;
-import lemon_juice.metal_resources.MetalResourcesGenerator;
+import lemon_juice.metal_data.resources.MetalResource;
+import lemon_juice.metal_data.resources.MetalResourcesGenerator;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,6 +29,19 @@ public class ItemModelGenerator {
             if(!currentIndex.isAlloy()) { //If not alloy raw metal
                 File rawMetalFile = new File(generateItemFileName(currentIndex.name(), "raw"));
                 writeItemFile(rawMetalFile, currentIndex.name(), "raw");
+            }
+
+            if(currentIndex.hasTools()) {
+                File swordFile = new File(generateItemFileName(currentIndex.name(), "sword"));
+                File pickaxeFile = new File(generateItemFileName(currentIndex.name(), "pickaxe"));
+                File axeFile = new File(generateItemFileName(currentIndex.name(), "axe"));
+                File shovelFile = new File(generateItemFileName(currentIndex.name(), "shovel"));
+                File hoeFile = new File(generateItemFileName(currentIndex.name(), "hoe"));
+                writeHandheldItemFile(swordFile, currentIndex.name(), "sword");
+                writeHandheldItemFile(pickaxeFile, currentIndex.name(), "pickaxe");
+                writeHandheldItemFile(axeFile, currentIndex.name(), "axe");
+                writeHandheldItemFile(shovelFile, currentIndex.name(), "shovel");
+                writeHandheldItemFile(hoeFile, currentIndex.name(), "hoe");
             }
 
             // Blocks
@@ -106,10 +119,34 @@ public class ItemModelGenerator {
             if(type.equals("raw")){
                 writer.println("        \"layer0\": \"neoforged_metals:item/" + type + "_" + name + "\"");
             } else {
-                if(!file.exists()) file.createNewFile();
                 writer.println("        \"layer0\": \"neoforged_metals:item/" + name + "_" + type + "\"");
             }
 
+            writer.println("    }");
+            writer.println("}");
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Generates a handheld item JSON file
+     *
+     * @param file The file itself
+     * @param name The metal type for the file
+     * @param type The item type for the file
+     */
+    public static void writeHandheldItemFile(File file, String name, String type){
+        try{
+            if(!file.exists()) file.createNewFile();
+            PrintWriter writer = new PrintWriter(file);
+
+            writer.println("{");
+            writer.println("    \"parent\": \"item/handheld\",");
+            writer.println("    \"textures\": {");
+            writer.println("        \"layer0\": \"neoforged_metals:item/" + name + "_" + type + "\"");
             writer.println("    }");
             writer.println("}");
             writer.close();

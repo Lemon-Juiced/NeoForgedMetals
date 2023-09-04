@@ -1,4 +1,6 @@
 {
+  "comment.neoforged_metals.base_metals": "Base Metals",
+
   "item.neoforged_metals.manganese_ingot": "Manganese Ingot",
   "item.neoforged_metals.tin_ingot": "Tin Ingot",
   "item.neoforged_metals.angmallen_ingot": "Angmallen Ingot",
@@ -26,6 +28,46 @@
   "item.neoforged_metals.raw_manganese": "Raw Manganese",
   "item.neoforged_metals.raw_tin": "Raw Tin",
 
+  "item.neoforged_metals.manganese_sword": "Manganese Sword",
+  "item.neoforged_metals.tin_sword": "Tin Sword",
+  "item.neoforged_metals.angmallen_sword": "Angmallen Sword",
+  "item.neoforged_metals.bronze_sword": "Bronze Sword",
+  "item.neoforged_metals.damascus_steel_sword": "Damascus Steel Sword",
+  "item.neoforged_metals.hepatizon_sword": "Hepatizon Sword",
+  "item.neoforged_metals.steel_sword": "Steel Sword",
+
+  "item.neoforged_metals.manganese_pickaxe": "Manganese Pickaxe",
+  "item.neoforged_metals.tin_pickaxe": "Tin Pickaxe",
+  "item.neoforged_metals.angmallen_pickaxe": "Angmallen Pickaxe",
+  "item.neoforged_metals.bronze_pickaxe": "Bronze Pickaxe",
+  "item.neoforged_metals.damascus_steel_pickaxe": "Damascus Steel Pickaxe",
+  "item.neoforged_metals.hepatizon_pickaxe": "Hepatizon Pickaxe",
+  "item.neoforged_metals.steel_pickaxe": "Steel Pickaxe",
+
+  "item.neoforged_metals.manganese_axe": "Manganese Axe",
+  "item.neoforged_metals.tin_axe": "Tin Axe",
+  "item.neoforged_metals.angmallen_axe": "Angmallen Axe",
+  "item.neoforged_metals.bronze_axe": "Bronze Axe",
+  "item.neoforged_metals.damascus_steel_axe": "Damascus Steel Axe",
+  "item.neoforged_metals.hepatizon_axe": "Hepatizon Axe",
+  "item.neoforged_metals.steel_axe": "Steel Axe",
+
+  "item.neoforged_metals.manganese_shovel": "Manganese Shovel",
+  "item.neoforged_metals.tin_shovel": "Tin Shovel",
+  "item.neoforged_metals.angmallen_shovel": "Angmallen Shovel",
+  "item.neoforged_metals.bronze_shovel": "Bronze Shovel",
+  "item.neoforged_metals.damascus_steel_shovel": "Damascus Steel Shovel",
+  "item.neoforged_metals.hepatizon_shovel": "Hepatizon Shovel",
+  "item.neoforged_metals.steel_shovel": "Steel Shovel",
+
+  "item.neoforged_metals.manganese_hoe": "Manganese Hoe",
+  "item.neoforged_metals.tin_hoe": "Tin Hoe",
+  "item.neoforged_metals.angmallen_hoe": "Angmallen Hoe",
+  "item.neoforged_metals.bronze_hoe": "Bronze Hoe",
+  "item.neoforged_metals.damascus_steel_hoe": "Damascus Steel Hoe",
+  "item.neoforged_metals.hepatizon_hoe": "Hepatizon Hoe",
+  "item.neoforged_metals.steel_hoe": "Steel Hoe",
+
   "block.neoforged_metals.manganese_block": "Block of Manganese",
   "block.neoforged_metals.tin_block": "Block of Tin",
   "block.neoforged_metals.angmallen_block": "Block of Angmallen",
@@ -49,6 +91,8 @@
   "item.neoforged_metals.iron_dust": "Iron Dust",
   "item.neoforged_metals.netherite_nugget": "Netherite Nugget",
   "item.neoforged_metals.netherite_dust": "Netherite Dust",
+
+  "comment.neoforged_metals.common": "Common Project Attributes",
 
   "itemGroup.neoforged_metals.neoforged_metals_metals_tab": "NeoForged Metals: Metals",
   "itemGroup.neoforged_metals.neoforged_metals_tools_tab": "NeoForged Metals: Armor, Tools, and Weapons",

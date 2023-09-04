@@ -1,7 +1,7 @@
 package lemon_juice.json_generators.data.minecraft.tags.block;
 
-import lemon_juice.metal_resources.MetalResource;
-import lemon_juice.metal_resources.MetalResourcesGenerator;
+import lemon_juice.metal_data.resources.MetalResource;
+import lemon_juice.metal_data.resources.MetalResourcesGenerator;
 
 import java.io.File;
 import java.io.IOException;
