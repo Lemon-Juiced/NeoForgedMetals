@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Generates Item modem JSONs for all metals
@@ -39,6 +40,18 @@ public class ItemModelGenerator {
                     File deepslateOreFile = new File(generateBlockFileName("deepslate", currentIndex.name(), "ore"));
                     writeBlockFile(deepslateOreFile, "deepslate", currentIndex.name(), "ore");
                 }
+            }
+        }
+
+        // Register Vanilla Parity Items As Well
+        ArrayList<String> parityResources = new ArrayList<>(Arrays.asList("copper", "gold", "iron", "netherite"));
+        for (int i = 0; i < parityResources.size(); i++) {
+            File dustFile = new File(generateItemFileName(parityResources.get(i), "dust"));
+            writeItemFile(dustFile, parityResources.get(i), "dust");
+
+            if(parityResources.get(i).equals("copper") || parityResources.get(i).equals("netherite")){
+                File nuggetFile = new File(generateItemFileName(parityResources.get(i), "nugget"));
+                writeItemFile(nuggetFile, parityResources.get(i), "nugget");
             }
         }
     }

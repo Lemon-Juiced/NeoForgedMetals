@@ -6,9 +6,11 @@ import lemon_juice.neoforged_metals.block.custom.MetalBlock;
 import lemon_juice.neoforged_metals.block.custom.OreBlock;
 import lemon_juice.neoforged_metals.block.custom.RawMetalBlock;
 import lemon_juice.neoforged_metals.item.NFMItems;
+import lemon_juice.neoforged_metals.item.custom.item.AbstractTooltippedItem;
 import lemon_juice.neoforged_metals.item.custom.item.DustItem;
 import lemon_juice.neoforged_metals.item.custom.item.IngotItem;
 import lemon_juice.neoforged_metals.item.custom.item.NuggetItem;
+import lemon_juice.neoforged_metals.registry.ParityRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -38,11 +40,17 @@ public class NFMCreativeTabs {
             .icon(() -> new ItemStack(getFirstItem(toolsTabType)))
             .build());
 
+    public static final RegistryObject<CreativeModeTab> NEOFORGED_METALS_VANILLA_PARITY_TAB = CREATIVE_MODE_TABS.register("neoforged_metals_vanilla_parity", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.neoforged_metals.neoforged_metals_vanilla_parity_tab"))
+            .icon(() -> new ItemStack(ParityRegistry.COPPER_NUGGET.get()))
+            .build());
+
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == NEOFORGED_METALS_METALS_TAB.get()) {
             for (RegistryObject<Item> item : NFMItems.ITEMS.getEntries())
                 if(item.get() instanceof IngotItem || item.get() instanceof NuggetItem || item.get() instanceof DustItem)
-                    event.accept(item.get());
+                    if(!((AbstractTooltippedItem) item.get()).getTooltipInfo().equals("vanilla")) //Filters out Vanilla Parity Items
+                        event.accept(item.get());
 
             for (RegistryObject<Block> blockItem : NFMBlocks.BLOCKS.getEntries())
                 if (blockItem.get() instanceof OreBlock || blockItem.get() instanceof MetalBlock || blockItem.get() instanceof RawMetalBlock)
@@ -59,6 +67,15 @@ public class NFMCreativeTabs {
                 if (blockItem.get() instanceof OreBlock || blockItem.get() instanceof MetalBlock || blockItem.get() instanceof RawMetalBlock)
                     event.accept(blockItem.get());
             */
+        }
+
+        if (event.getTab() == NEOFORGED_METALS_VANILLA_PARITY_TAB.get()) {
+            event.accept(ParityRegistry.COPPER_NUGGET.get());
+            event.accept(ParityRegistry.COPPER_DUST.get());
+            event.accept(ParityRegistry.IRON_DUST.get());
+            event.accept(ParityRegistry.GOLD_DUST.get());
+            event.accept(ParityRegistry.NETHERITE_NUGGET.get());
+            event.accept(ParityRegistry.NETHERITE_DUST.get());
         }
     }
 

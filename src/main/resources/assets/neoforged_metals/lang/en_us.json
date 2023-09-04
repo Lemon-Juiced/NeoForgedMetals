@@ -43,8 +43,16 @@
   "block.neoforged_metals.deepslate_hepatizon_ore": "Deepslate Hepatizon Ore",
   "block.neoforged_metals.deepslate_manganese_ore": "Deepslate Manganese Ore",
 
+  "item.neoforged_metals.copper_nugget": "Copper Nugget",
+  "item.neoforged_metals.copper_dust": "Copper Dust",
+  "item.neoforged_metals.gold_dust": "Gold Dust",
+  "item.neoforged_metals.iron_dust": "Iron Dust",
+  "item.neoforged_metals.netherite_nugget": "Copper Nugget",
+  "item.neoforged_metals.netherite_dust": "Copper Dust",
+
   "itemGroup.neoforged_metals.neoforged_metals_metals_tab": "NeoForged Metals: Metals",
   "itemGroup.neoforged_metals.neoforged_metals_tools_tab": "NeoForged Metals: Armor, Tools, and Weapons",
+  "itemGroup.neoforged_metals.neoforged_metals_vanilla_parity_tab": "NeoForged Metals: Vanilla Parity",
 
   "tooltip.neoforged_metals.base_metals": "Base Metals",
   "tooltip.neoforged_metals.precious_metals": "Precious Metals",

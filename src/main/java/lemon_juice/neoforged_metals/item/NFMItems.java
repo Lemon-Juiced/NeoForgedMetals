@@ -3,6 +3,7 @@ package lemon_juice.neoforged_metals.item;
 import lemon_juice.metal_resources.MetalResource;
 import lemon_juice.metal_resources.MetalResourcesGenerator;
 import lemon_juice.neoforged_metals.NeoForgedMetals;
+import lemon_juice.neoforged_metals.registry.ParityRegistry;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,6 +22,8 @@ public class NFMItems {
             MetalResource currentIndex = metalResources.get(i);
             registerMetalItemGroup(currentIndex.name(), currentIndex.oreGroup(), currentIndex.isAlloy(), currentIndex.hasTools(), currentIndex.hasArmor());
         }
+
+        ParityRegistry.registerParity();
 
         ITEMS.register(eventBus);
     }
