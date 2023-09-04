@@ -26,6 +26,11 @@ public class ItemModelGenerator {
             writeItemFile(nuggetFile, currentIndex.name(), "nugget");
             writeItemFile(dustFile, currentIndex.name(), "dust");
 
+            if(!currentIndex.isAlloy()) { //If not alloy raw metal
+                File rawMetalFile = new File(generateItemFileName(currentIndex.name(), "raw"));
+                writeItemFile(rawMetalFile, currentIndex.name(), "raw");
+            }
+
             // Blocks
             File blockFile = new File(generateBlockFileName("", currentIndex.name(), "block"));
             writeBlockFile(blockFile, "", currentIndex.name(), "block");
@@ -64,7 +69,8 @@ public class ItemModelGenerator {
      * @return a file name and location for a specific file
      */
     public static String generateItemFileName(String name, String type){
-        return "src/main/resources/assets/neoforged_metals/models/item/" + name + "_" + type + ".json";
+        if(type.equals("raw"))return "src/main/resources/assets/neoforged_metals/models/item/" + type + "_" + name + ".json";
+        else return "src/main/resources/assets/neoforged_metals/models/item/" + name + "_" + type + ".json";
     }
 
     /**
@@ -96,10 +102,16 @@ public class ItemModelGenerator {
             writer.println("{");
             writer.println("    \"parent\": \"item/generated\",");
             writer.println("    \"textures\": {");
-            writer.println("        \"layer0\": \"neoforged_metals:item/" + name + "_" + type + "\"");
+
+            if(type.equals("raw")){
+                writer.println("        \"layer0\": \"neoforged_metals:item/" + type + "_" + name + "\"");
+            } else {
+                if(!file.exists()) file.createNewFile();
+                writer.println("        \"layer0\": \"neoforged_metals:item/" + name + "_" + type + "\"");
+            }
+
             writer.println("    }");
             writer.println("}");
-
             writer.close();
 
         } catch (IOException e) {

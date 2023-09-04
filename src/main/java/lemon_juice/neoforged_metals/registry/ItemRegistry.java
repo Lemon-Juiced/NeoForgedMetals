@@ -4,6 +4,7 @@ import lemon_juice.neoforged_metals.item.NFMItems;
 import lemon_juice.neoforged_metals.item.custom.item.DustItem;
 import lemon_juice.neoforged_metals.item.custom.item.IngotItem;
 import lemon_juice.neoforged_metals.item.custom.item.NuggetItem;
+import lemon_juice.neoforged_metals.item.custom.item.RawMetalItem;
 import net.minecraft.world.item.Item;
 
 import static lemon_juice.neoforged_metals.registry.BlockRegistry.registerMetalBlockGroup;
@@ -40,6 +41,8 @@ public class ItemRegistry {
         NFMItems.ITEMS.register(name + "_ingot", () -> new IngotItem(new Item.Properties(), oreGroup));
         NFMItems.ITEMS.register(name + "_nugget", () -> new NuggetItem(new Item.Properties(), oreGroup));
         NFMItems.ITEMS.register(name + "_dust", () -> new DustItem(new Item.Properties(), oreGroup));
+
+        if(!isAlloy) NFMItems.ITEMS.register("raw_" + name, () -> new RawMetalItem(new Item.Properties(), oreGroup));
 
         if(hasTools){}
         if(hasArmor){}

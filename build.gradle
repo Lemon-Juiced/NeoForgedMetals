@@ -57,10 +57,21 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven { url = "https://maven.theillusivec4.top/"}
+    maven { url = "https://dvs1.progwml6.com/files/maven/"}
+    maven { url = "https://modmaven.dev"}
+    maven { url = "https://minecraft.curseforge.com/api/maven/"}
+    maven { url = "https://www.cursemaven.com"}
 }
 
 dependencies {
     minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
+
+    // JEI
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.0.0.15")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.0.0.15")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-common:15.0.0.15")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.0.0.15")
 }
 
 tasks.withType(ProcessResources).configureEach {

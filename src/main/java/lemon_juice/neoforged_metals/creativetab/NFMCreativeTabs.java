@@ -6,10 +6,7 @@ import lemon_juice.neoforged_metals.block.custom.MetalBlock;
 import lemon_juice.neoforged_metals.block.custom.OreBlock;
 import lemon_juice.neoforged_metals.block.custom.RawMetalBlock;
 import lemon_juice.neoforged_metals.item.NFMItems;
-import lemon_juice.neoforged_metals.item.custom.item.AbstractTooltippedItem;
-import lemon_juice.neoforged_metals.item.custom.item.DustItem;
-import lemon_juice.neoforged_metals.item.custom.item.IngotItem;
-import lemon_juice.neoforged_metals.item.custom.item.NuggetItem;
+import lemon_juice.neoforged_metals.item.custom.item.*;
 import lemon_juice.neoforged_metals.registry.ParityRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -48,7 +45,7 @@ public class NFMCreativeTabs {
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == NEOFORGED_METALS_METALS_TAB.get()) {
             for (RegistryObject<Item> item : NFMItems.ITEMS.getEntries())
-                if(item.get() instanceof IngotItem || item.get() instanceof NuggetItem || item.get() instanceof DustItem)
+                if(item.get() instanceof IngotItem || item.get() instanceof NuggetItem || item.get() instanceof DustItem || item.get() instanceof RawMetalItem)
                     if(!((AbstractTooltippedItem) item.get()).getTooltipInfo().equals("vanilla")) //Filters out Vanilla Parity Items
                         event.accept(item.get());
 
