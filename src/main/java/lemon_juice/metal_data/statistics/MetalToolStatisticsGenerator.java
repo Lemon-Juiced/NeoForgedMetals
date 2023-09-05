@@ -34,8 +34,6 @@ public class MetalToolStatisticsGenerator {
         MetalToolStatistic hepatizonToolStatistic = alloyToolStatisticAverager("hepatizon", copperToolStatistic, goldToolStatistic);
         MetalToolStatistic steelToolStatistic = alloyToolStatisticAverager("steel", ironToolStatistic, manganeseToolStatistic);
 
-        metalToolStatistics.add(manganeseToolStatistic);
-        metalToolStatistics.add(tinToolStatistic);
         metalToolStatistics.add(angmallenToolStatistic);
         metalToolStatistics.add(bronzeToolStatistic);
         metalToolStatistics.add(damascusSteelToolStatistic);

@@ -17,8 +17,8 @@ public class MetalResourcesGenerator {
         */
 
         // Base Metals
-        metalResources.add(new MetalResource("manganese", "base", 2, false, true, true));
-        metalResources.add(new MetalResource("tin", "base", 1, false, true, true));
+        metalResources.add(new MetalResource("manganese", "base", 2, false, false, false));
+        metalResources.add(new MetalResource("tin", "base", 1, false, false, false));
         metalResources.add(new MetalResource("angmallen", "base", 2,true, true, true));
         metalResources.add(new MetalResource("bronze", "base", 1, true, true, true));
         metalResources.add(new MetalResource("damascus_steel", "base", 2, true, true, true));
