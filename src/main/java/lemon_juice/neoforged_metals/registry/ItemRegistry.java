@@ -61,11 +61,11 @@ public class ItemRegistry {
                 MetalToolStatistic currentIndex = metalToolStatistics.get(i);
                 if(name.equals(currentIndex.name())){
                     Tier currentTier = TierRegistry.generateMetalToolTier(currentIndex);
-                    NFMItems.ITEMS.register(name + "_sword", () -> new NFMSwordItem(currentTier, 3, -2.4F, new Item.Properties(), oreGroup));
-                    NFMItems.ITEMS.register(name + "_pickaxe", () -> new NFMPickaxeItem(currentTier, 1, -2.8F, new Item.Properties(), oreGroup));
-                    NFMItems.ITEMS.register(name + "_axe", () -> new NFMAxeItem(currentTier, 6.0F, -3.2F, new Item.Properties(), oreGroup));
-                    NFMItems.ITEMS.register(name + "_shovel", () -> new NFMShovelItem(currentTier, -3, 0.0F, new Item.Properties(), oreGroup));
-                    NFMItems.ITEMS.register(name + "_hoe", () -> new NFMHoeItem(currentTier, (int) currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup));
+                    NFMItems.ITEMS.register(name + "_sword", () -> new NFMSwordItem(currentTier, 3, -2.4F, new Item.Properties(), oreGroup, currentIndex.level()));
+                    NFMItems.ITEMS.register(name + "_pickaxe", () -> new NFMPickaxeItem(currentTier, 1, -2.8F, new Item.Properties(), oreGroup, currentIndex.level()));
+                    NFMItems.ITEMS.register(name + "_axe", () -> new NFMAxeItem(currentTier, 6.0F, -3.2F, new Item.Properties(), oreGroup, currentIndex.level()));
+                    NFMItems.ITEMS.register(name + "_shovel", () -> new NFMShovelItem(currentTier, -3, 0.0F, new Item.Properties(), oreGroup, currentIndex.level()));
+                    NFMItems.ITEMS.register(name + "_hoe", () -> new NFMHoeItem(currentTier, (int) currentIndex.speed(), currentIndex.damage(), new Item.Properties(), oreGroup, currentIndex.level()));
                 }
             }
         }

@@ -209,5 +209,6 @@
   "tooltip.neoforged_metals.fantasy_metals": "Fantasy Metals",
   "tooltip.neoforged_metals.utility_metals": "Utility Metals",
   "tooltip.neoforged_metals.nether_metals": "Nether Metals",
-  "tooltip.neoforged_metals.end_metals": "End Metals"
+  "tooltip.neoforged_metals.end_metals": "End Metals",
+  "tooltip.neoforged_metals.level": "Tier: "
 }

@@ -8,11 +8,13 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class NFMPickaxeItem extends PickaxeItem {
+    private final int level;
     private final String tooltipInfo;
 
-    public NFMPickaxeItem(Tier tier, int speed, float damage, Properties properties, String tooltipInfo) {
+    public NFMPickaxeItem(Tier tier, int speed, float damage, Properties properties, String tooltipInfo, int level) {
         super(tier, speed, damage, properties);
         this.tooltipInfo = tooltipInfo;
+        this.level = level;
     }
 
     public String getTooltipInfo() {
@@ -27,6 +29,8 @@ public class NFMPickaxeItem extends PickaxeItem {
         if(tooltipInfo.equals("utility")) components.add(Component.translatable("tooltip.neoforged_metals.utility_metals"));
         if(tooltipInfo.equals("nether")) components.add(Component.translatable("tooltip.neoforged_metals.nether_metals"));
         if(tooltipInfo.equals("end")) components.add(Component.translatable("tooltip.neoforged_metals.end_metals"));
+
+        components.add(Component.translatable("tooltip.neoforged_metals.level").append(String.valueOf(this.level)));
 
         super.appendHoverText(itemStack, level, components, tooltipFlag);
     }
