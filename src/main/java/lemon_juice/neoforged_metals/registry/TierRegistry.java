@@ -21,7 +21,7 @@ public class TierRegistry {
      * @param mts The <code>MetalToolStatistic</code>
      * @return The metal tier
      */
-    public static Tier generateMetalTier(MetalToolStatistic mts){
+    public static Tier generateMetalToolTier(MetalToolStatistic mts){
         Tier generatedTier =
                 TierSortingRegistry.registerTier(new ForgeTier(mts.level(), mts.uses(), mts.speed(), mts.damage(), mts.enchantmentValue(),
                         getAssociatedLevelBlockTags(mts.level()), () -> mts.repairIngredient()),

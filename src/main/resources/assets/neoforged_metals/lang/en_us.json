@@ -58,6 +58,30 @@
   "item.neoforged_metals.hepatizon_hoe": "Hepatizon Hoe",
   "item.neoforged_metals.steel_hoe": "Steel Hoe",
 
+  "item.neoforged_metals.angmallen_helmet": "Angmallen Helmet",
+  "item.neoforged_metals.bronze_helmet": "Bronze Helmet",
+  "item.neoforged_metals.damascus_steel_helmet": "Damascus Steel Helmet",
+  "item.neoforged_metals.hepatizon_helmet": "Hepatizon Helmet",
+  "item.neoforged_metals.steel_helmet": "Steel Helmet",
+
+  "item.neoforged_metals.angmallen_chestplate": "Angmallen Chestplate",
+  "item.neoforged_metals.bronze_chestplate": "Bronze Chestplate",
+  "item.neoforged_metals.damascus_steel_chestplate": "Damascus Steel Chestplate",
+  "item.neoforged_metals.hepatizon_chestplate": "Hepatizon Chestplate",
+  "item.neoforged_metals.steel_chestplate": "Steel Chestplate",
+
+  "item.neoforged_metals.angmallen_leggings": "Angmallen Leggings",
+  "item.neoforged_metals.bronze_leggings": "Bronze Leggings",
+  "item.neoforged_metals.damascus_steel_leggings": "Damascus Steel Leggings",
+  "item.neoforged_metals.hepatizon_leggings": "Hepatizon Leggings",
+  "item.neoforged_metals.steel_leggings": "Steel Leggings",
+
+  "item.neoforged_metals.angmallen_boots": "Angmallen Boots",
+  "item.neoforged_metals.bronze_boots": "Bronze Boots",
+  "item.neoforged_metals.damascus_steel_boots": "Damascus Steel Boots",
+  "item.neoforged_metals.hepatizon_boots": "Hepatizon Boots",
+  "item.neoforged_metals.steel_boots": "Steel Boots",
+
   "block.neoforged_metals.manganese_block": "Block of Manganese",
   "block.neoforged_metals.tin_block": "Block of Tin",
   "block.neoforged_metals.angmallen_block": "Block of Angmallen",

@@ -1,5 +1,6 @@
 package lemon_juice.metal_data.statistics;
 
+import lemon_juice.metal_data.statistics.util.GetRepairIngredient;
 import lemon_juice.neoforged_metals.tag.NFMTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -65,14 +66,7 @@ public class MetalToolStatisticsGenerator {
         float speed = (metal1.speed() + metal2.speed())/ totalWeight;
         float damage = (metal1.damage() + metal2.damage()) / totalWeight;
         int enchantmentValue = (int) (double) ((metal1.enchantmentValue() + metal2.enchantmentValue()) / totalWeight);
-        Ingredient repairIngredient = switch (name) {
-            case "angamllen" -> Ingredient.of(NFMTags.Items.INGOTS_ANGMALLEN);
-            case "bronze" -> Ingredient.of(NFMTags.Items.INGOTS_BRONZE);
-            case "damascus_steel" -> Ingredient.of(NFMTags.Items.INGOTS_DAMASCUS_STEEL);
-            case "hepatizon" -> Ingredient.of(NFMTags.Items.INGOTS_HEPATIZON);
-            case "steel" -> Ingredient.of(NFMTags.Items.INGOTS_STEEL);
-            default -> Ingredient.EMPTY;
-        };
+        Ingredient repairIngredient = GetRepairIngredient.getRepairIngredient(name);
 
         return new MetalToolStatistic(name, level, uses, speed, damage, enchantmentValue, repairIngredient);
     }

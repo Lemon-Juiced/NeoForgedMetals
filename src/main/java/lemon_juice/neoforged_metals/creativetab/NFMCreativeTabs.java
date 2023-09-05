@@ -6,7 +6,9 @@ import lemon_juice.neoforged_metals.block.custom.MetalBlock;
 import lemon_juice.neoforged_metals.block.custom.OreBlock;
 import lemon_juice.neoforged_metals.block.custom.RawMetalBlock;
 import lemon_juice.neoforged_metals.item.NFMItems;
+import lemon_juice.neoforged_metals.item.custom.armor.NFMArmorItem;
 import lemon_juice.neoforged_metals.item.custom.item.*;
+import lemon_juice.neoforged_metals.item.custom.tool.*;
 import lemon_juice.neoforged_metals.registry.ParityRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -59,11 +61,12 @@ public class NFMCreativeTabs {
 
         if (event.getTab() == NEOFORGED_METALS_TOOLS_TAB.get()) {
             for (RegistryObject<Item> item : NFMItems.ITEMS.getEntries())
-                if(item.get() instanceof SwordItem ||
-                        item.get() instanceof PickaxeItem ||
-                        item.get() instanceof AxeItem ||
-                        item.get() instanceof ShovelItem ||
-                        item.get() instanceof HoeItem )
+                if(item.get() instanceof NFMSwordItem ||
+                        item.get() instanceof NFMPickaxeItem ||
+                        item.get() instanceof NFMAxeItem ||
+                        item.get() instanceof NFMShovelItem ||
+                        item.get() instanceof NFMHoeItem ||
+                        item.get() instanceof NFMArmorItem)
                     event.accept(item.get());
         }
 

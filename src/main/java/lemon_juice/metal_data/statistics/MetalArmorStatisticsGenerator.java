@@ -1,5 +1,6 @@
 package lemon_juice.metal_data.statistics;
 
+import lemon_juice.metal_data.statistics.util.GetRepairIngredient;
 import lemon_juice.neoforged_metals.tag.NFMTags;
 import net.minecraft.Util;
 import net.minecraft.world.item.ArmorItem;
@@ -84,7 +85,7 @@ public class MetalArmorStatisticsGenerator {
 
         MetalArmorStatistic angmallenArmorStatistic = alloyArmorStatisticAverager("angmallen", goldArmorStatistic, ironArmorStatistic);
         MetalArmorStatistic bronzeArmorStatistic = alloyArmorStatisticAverager("bronze", copperArmorStatistic, tinArmorStatistic);
-        MetalArmorStatistic damascusSteelArmorStatistic = alloyArmorStatisticAverager("bronze", bronzeArmorStatistic, ironArmorStatistic);
+        MetalArmorStatistic damascusSteelArmorStatistic = alloyArmorStatisticAverager("damascus_steel", bronzeArmorStatistic, ironArmorStatistic);
         MetalArmorStatistic hepatizonArmorStatistic = alloyArmorStatisticAverager("hepatizon", copperArmorStatistic, goldArmorStatistic);
         MetalArmorStatistic steelArmorStatistic = alloyArmorStatisticAverager("steel", ironArmorStatistic, manganeseArmorStatistic);
 
@@ -133,14 +134,7 @@ public class MetalArmorStatisticsGenerator {
         int enchantmentValue = (int) (double) ((metal1.enchantmentValue() + metal2.enchantmentValue()) / totalWeight);
         float toughness = (metal1.toughness() + metal2.toughness()) / totalWeight;
         float knockbackResistance = (metal1.knockbackResistance() + metal2.knockbackResistance()) / totalWeight;
-        Ingredient repairIngredient = switch (name) {
-            case "angamllen" -> Ingredient.of(NFMTags.Items.INGOTS_ANGMALLEN);
-            case "bronze" -> Ingredient.of(NFMTags.Items.INGOTS_BRONZE);
-            case "damascus_steel" -> Ingredient.of(NFMTags.Items.INGOTS_DAMASCUS_STEEL);
-            case "hepatizon" -> Ingredient.of(NFMTags.Items.INGOTS_HEPATIZON);
-            case "steel" -> Ingredient.of(NFMTags.Items.INGOTS_STEEL);
-            default -> Ingredient.EMPTY;
-        };
+        Ingredient repairIngredient = GetRepairIngredient.getRepairIngredient(name);
 
         return new MetalArmorStatistic(name, durabilityMultiplier, enumMap, enchantmentValue, toughness, knockbackResistance, repairIngredient);
     }
