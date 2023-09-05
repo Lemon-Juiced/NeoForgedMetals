@@ -1,0 +1,8 @@
+Authors: Lemon_Juiced
+Original Textures: Lemon_Juiced and TechDahTurtle
+Translators: Lemon_Juiced (en_us.json)
+
+Attributions:
+Metallurgy: https://www.curseforge.com/minecraft/mc-mods/metallurgy - Temporary textures for testing purposes (under GNU General Public License v3 (GPLv3)).
+
+Special Thanks: The Scalar Team (Past, Present, and Future)
