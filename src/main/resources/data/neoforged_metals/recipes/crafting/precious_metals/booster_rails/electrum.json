@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "#/#",
+    "#r#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/electrum"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:golden_rail",
+    "count": 6
+  }
+}

@@ -15,6 +15,7 @@ public class MasterNeoForgedMetalsDataGenerator {
         BaseMetalsCraftingRecipeGenerator.baseMetalsCraftingRecipeGenerator();
         CompactingCraftingRecipeGenerator.compactingCraftingRecipeGenerator();
         DecompactingCraftingRecipeGenerator.decompactingCraftingRecipeGenerator();
+        PreciousMetalsCraftingRecipeGenerator.preciousMetalsCraftingRecipeGenerator();
         ToolsCraftingRecipeGenerator.toolsCraftingRecipeGenerator();
 
         SmeltingRecipeGenerator.smeltingRecipeGenerator();
