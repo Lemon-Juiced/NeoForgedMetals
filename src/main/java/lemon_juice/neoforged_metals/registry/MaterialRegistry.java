@@ -65,7 +65,7 @@ public class MaterialRegistry{
 
             @Override
             public float getKnockbackResistance() {
-                return mas.durabilityMultiplier();
+                return mas.knockbackResistance();
             }
         };
         return generatedMaterial;
