@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/angmallen_helmet",
+    "layer0": "neoforged_metals:item/angmallen_helmet",
     "layer1": "minecraft:trims/items/helmet_trim_netherite"
   }
 }

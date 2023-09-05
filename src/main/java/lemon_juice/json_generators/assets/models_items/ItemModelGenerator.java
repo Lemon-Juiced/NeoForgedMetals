@@ -267,68 +267,68 @@ public class ItemModelGenerator {
                     "  \"parent\": \"minecraft:item/generated\",\n" +
                     "  \"overrides\": [\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_quartz_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_quartz_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.1\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_iron_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_iron_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.2\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_netherite_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_netherite_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.3\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_redstone_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_redstone_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.4\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_copper_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_copper_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.5\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_gold_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_gold_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.6\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_emerald_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_emerald_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.7\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_diamond_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_diamond_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.8\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_lapis_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_lapis_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 0.9\n" +
                     "      }\n" +
                     "    },\n" +
                     "    {\n" +
-                    "      \"model\": \"minecraft:item/" + name + "_" + type + "_amethyst_trim\",\n" +
+                    "      \"model\": \"neoforged_metals:item/" + name + "_" + type + "_amethyst_trim\",\n" +
                     "      \"predicate\": {\n" +
                     "        \"trim_type\": 1.0\n" +
                     "      }\n" +
                     "    }\n" +
                     "  ],\n" +
                     "  \"textures\": {\n" +
-                    "    \"layer0\": \"minecraft:item/" + name + "_" + type + "\"\n" +
+                    "    \"layer0\": \"neoforged_metals:item/" + name + "_" + type + "\"\n" +
                     "  }\n" +
                     "}");
 
@@ -354,7 +354,7 @@ public class ItemModelGenerator {
             writer.println("{\n" +
                     "  \"parent\": \"minecraft:item/generated\",\n" +
                     "  \"textures\": {\n" +
-                    "    \"layer0\": \"minecraft:item/" + name + "_" + type + "\",\n" +
+                    "    \"layer0\": \"neoforged_metals:item/" + name + "_" + type + "\",\n" +
                     "    \"layer1\": \"minecraft:trims/items/" + type + "_trim_" + trim + "\"\n" +
                     "  }\n" +
                     "}");
