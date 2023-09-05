@@ -5,6 +5,7 @@ import lemon_juice.json_generators.data.neoforged_metals.recipes.blasting.Blasti
 import lemon_juice.json_generators.data.neoforged_metals.recipes.crafting.BaseMetalsCraftingRecipeGenerator;
 import lemon_juice.json_generators.data.neoforged_metals.recipes.crafting.CompactingCraftingRecipeGenerator;
 import lemon_juice.json_generators.data.neoforged_metals.recipes.crafting.DecompactingCraftingRecipeGenerator;
+import lemon_juice.json_generators.data.neoforged_metals.recipes.crafting.ToolsCraftingRecipeGenerator;
 import lemon_juice.json_generators.data.neoforged_metals.recipes.smelting.SmeltingRecipeGenerator;
 
 public class MasterNeoForgedMetalsDataGenerator {
@@ -16,6 +17,7 @@ public class MasterNeoForgedMetalsDataGenerator {
         BaseMetalsCraftingRecipeGenerator.baseMetalsCraftingRecipeGenerator();
         CompactingCraftingRecipeGenerator.compactingCraftingRecipeGenerator();
         DecompactingCraftingRecipeGenerator.decompactingCraftingRecipeGenerator();
+        ToolsCraftingRecipeGenerator.toolsCraftingRecipeGenerator();
 
         SmeltingRecipeGenerator.smeltingRecipeGenerator();
     }
