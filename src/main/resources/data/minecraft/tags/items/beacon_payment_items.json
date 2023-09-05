@@ -7,6 +7,11 @@
     "neoforged_metals:bronze_ingot",
     "neoforged_metals:damascus_steel_ingot",
     "neoforged_metals:hepatizon_ingot",
-    "neoforged_metals:steel_ingot"
+    "neoforged_metals:steel_ingot",
+    "neoforged_metals:platinum_ingot",
+    "neoforged_metals:silver_ingot",
+    "neoforged_metals:zinc_ingot",
+    "neoforged_metals:brass_ingot",
+    "neoforged_metals:electrum_ingot"
   ]
 }

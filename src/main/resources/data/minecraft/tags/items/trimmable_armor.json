@@ -20,6 +20,22 @@
     "neoforged_metals:steel_helmet",
     "neoforged_metals:steel_chestplate",
     "neoforged_metals:steel_leggings",
-    "neoforged_metals:steel_boots"
+    "neoforged_metals:steel_boots",
+    "neoforged_metals:platinum_helmet",
+    "neoforged_metals:platinum_chestplate",
+    "neoforged_metals:platinum_leggings",
+    "neoforged_metals:platinum_boots",
+    "neoforged_metals:silver_helmet",
+    "neoforged_metals:silver_chestplate",
+    "neoforged_metals:silver_leggings",
+    "neoforged_metals:silver_boots",
+    "neoforged_metals:brass_helmet",
+    "neoforged_metals:brass_chestplate",
+    "neoforged_metals:brass_leggings",
+    "neoforged_metals:brass_boots",
+    "neoforged_metals:electrum_helmet",
+    "neoforged_metals:electrum_chestplate",
+    "neoforged_metals:electrum_leggings",
+    "neoforged_metals:electrum_boots"
   ]
 }

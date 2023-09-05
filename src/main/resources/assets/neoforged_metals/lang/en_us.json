@@ -99,12 +99,104 @@
   "block.neoforged_metals.deepslate_manganese_ore": "Deepslate Manganese Ore",
   "block.neoforged_metals.deepslate_tin_ore": "Deepslate Tin Ore",
 
+
+  "comment.neoforged_metals.precious_metals": "Precious Metals",
+
+  "item.neoforged_metals.platinum_ingot": "Platinum Ingot",
+  "item.neoforged_metals.silver_ingot": "Silver Ingot",
+  "item.neoforged_metals.zinc_ingot": "Zinc Ingot",
+  "item.neoforged_metals.brass_ingot": "Brass Ingot",
+  "item.neoforged_metals.electrum_ingot": "Electrum Ingot",
+
+  "item.neoforged_metals.platinum_nugget": "Platinum Nugget",
+  "item.neoforged_metals.silver_nugget": "Silver Nugget",
+  "item.neoforged_metals.zinc_nugget": "Zinc Nugget",
+  "item.neoforged_metals.brass_nugget": "Brass Nugget",
+  "item.neoforged_metals.electrum_nugget": "Electrum Nugget",
+
+  "item.neoforged_metals.platinum_dust": "Platinum Dust",
+  "item.neoforged_metals.silver_dust": "Silver Dust",
+  "item.neoforged_metals.zinc_dust": "Zinc Dust",
+  "item.neoforged_metals.brass_dust": "Brass Dust",
+  "item.neoforged_metals.electrum_dust": "Electrum Dust",
+
+  "item.neoforged_metals.raw_platinum": "Raw Platinum",
+  "item.neoforged_metals.raw_silver": "Raw Silver",
+  "item.neoforged_metals.raw_zinc": "Raw Zinc",
+
+  "item.neoforged_metals.platinum_sword": "Platinum Sword",
+  "item.neoforged_metals.silver_sword": "Silver Sword",
+  "item.neoforged_metals.brass_sword": "Brass Sword",
+  "item.neoforged_metals.electrum_sword": "Electrum Sword",
+
+  "item.neoforged_metals.platinum_pickaxe": "Platinum Pickaxe",
+  "item.neoforged_metals.silver_pickaxe": "Silver Pickaxe",
+  "item.neoforged_metals.brass_pickaxe": "Brass Pickaxe",
+  "item.neoforged_metals.electrum_pickaxe": "Electrum Pickaxe",
+
+  "item.neoforged_metals.platinum_axe": "Platinum Axe",
+  "item.neoforged_metals.silver_axe": "Silver Axe",
+  "item.neoforged_metals.brass_axe": "Brass Axe",
+  "item.neoforged_metals.electrum_axe": "Electrum Axe",
+
+  "item.neoforged_metals.platinum_shovel": "Platinum Shovel",
+  "item.neoforged_metals.silver_shovel": "Silver Shovel",
+  "item.neoforged_metals.brass_shovel": "Brass Shovel",
+  "item.neoforged_metals.electrum_shovel": "Electrum Shovel",
+
+  "item.neoforged_metals.platinum_hoe": "Platinum Hoe",
+  "item.neoforged_metals.silver_hoe": "Silver Hoe",
+  "item.neoforged_metals.brass_hoe": "Brass Hoe",
+  "item.neoforged_metals.electrum_hoe": "Electrum Hoe",
+
+  "item.neoforged_metals.platinum_helmet": "Platinum Helmet",
+  "item.neoforged_metals.silver_helmet": "Silver Helmet",
+  "item.neoforged_metals.brass_helmet": "Brass Helmet",
+  "item.neoforged_metals.electrum_helmet": "Electrum Helmet",
+
+  "item.neoforged_metals.platinum_chestplate": "Platinum Chestplate",
+  "item.neoforged_metals.silver_chestplate": "Silver Chestplate",
+  "item.neoforged_metals.brass_chestplate": "Brass Chestplate",
+  "item.neoforged_metals.electrum_chestplate": "Electrum Chestplate",
+
+  "item.neoforged_metals.platinum_leggings": "Platinum Leggings",
+  "item.neoforged_metals.silver_leggings": "Silver Leggings",
+  "item.neoforged_metals.brass_leggings": "Brass Leggings",
+  "item.neoforged_metals.electrum_leggings": "Electrum Leggings",
+
+  "item.neoforged_metals.platinum_boots": "Platinum Boots",
+  "item.neoforged_metals.silver_boots": "Silver Boots",
+  "item.neoforged_metals.brass_boots": "Brass Boots",
+  "item.neoforged_metals.electrum_boots": "Electrum Boots",
+
+  "block.neoforged_metals.platinum_block": "Block of Platinum",
+  "block.neoforged_metals.silver_block": "Block of Silver",
+  "block.neoforged_metals.zinc_block": "Block of Zinc",
+  "block.neoforged_metals.brass_block": "Block of Brass",
+  "block.neoforged_metals.electrum_block": "Block of Electrum",
+
+  "block.neoforged_metals.raw_platinum_block": "Block of Raw Platinum",
+  "block.neoforged_metals.raw_silver_block": "Block of Raw Silver",
+  "block.neoforged_metals.raw_zinc_block": "Block of Raw Zinc",
+
+  "block.neoforged_metals.platinum_ore": "Platinum Ore",
+  "block.neoforged_metals.silver_ore": "Silver Ore",
+  "block.neoforged_metals.zinc_ore": "Zinc Ore",
+
+  "block.neoforged_metals.deepslate_platinum_ore": "Deepslate Platinum Ore",
+  "block.neoforged_metals.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.neoforged_metals.deepslate_zinc_ore": "Deepslate Zinc Ore",
+
+
+  "comment.neoforged_metals.vanilla_parity_items": "Vanilla Parity Items",
+
   "item.neoforged_metals.copper_nugget": "Copper Nugget",
   "item.neoforged_metals.copper_dust": "Copper Dust",
   "item.neoforged_metals.gold_dust": "Gold Dust",
   "item.neoforged_metals.iron_dust": "Iron Dust",
   "item.neoforged_metals.netherite_nugget": "Netherite Nugget",
   "item.neoforged_metals.netherite_dust": "Netherite Dust",
+
 
   "comment.neoforged_metals.common": "Common Project Attributes",
 

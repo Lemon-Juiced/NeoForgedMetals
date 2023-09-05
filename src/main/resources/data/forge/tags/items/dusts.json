@@ -11,6 +11,11 @@
     "#forge:dusts/bronze",
     "#forge:dusts/damascus_steel",
     "#forge:dusts/hepatizon",
-    "#forge:dusts/steel"
+    "#forge:dusts/steel",
+    "#forge:dusts/platinum",
+    "#forge:dusts/silver",
+    "#forge:dusts/zinc",
+    "#forge:dusts/brass",
+    "#forge:dusts/electrum"
   ]
 }

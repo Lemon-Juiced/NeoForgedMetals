@@ -5,6 +5,11 @@
     "neoforged_metals:tin_ore",
     "neoforged_metals:deepslate_tin_ore",
     "neoforged_metals:tin_block",
-    "neoforged_metals:bronze_block"
+    "neoforged_metals:bronze_block",
+    "neoforged_metals:raw_zinc_block",
+    "neoforged_metals:zinc_ore",
+    "neoforged_metals:deepslate_zinc_ore",
+    "neoforged_metals:zinc_block",
+    "neoforged_metals:brass_block"
   ]
 }

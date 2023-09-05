@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:deepslate_zinc_ore",
+    "neoforged_metals:zinc_ore"
+  ]
+}

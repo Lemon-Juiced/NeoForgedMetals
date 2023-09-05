@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "#forge:raw_materials/manganese",
-    "#forge:raw_materials/tin"
+    "#forge:raw_materials/tin",
+    "#forge:raw_materials/platinum",
+    "#forge:raw_materials/silver",
+    "#forge:raw_materials/zinc"
   ]
 }

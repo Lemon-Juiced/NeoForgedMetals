@@ -68,6 +68,13 @@ public class MetalArmorStatisticsGenerator {
                 }), 15, 3.0F, 0.1F, Ingredient.of(Items.NETHERITE_INGOT));
 
         // Base Metals
+        MetalArmorStatistic manganeseArmorStatistic = new MetalArmorStatistic("manganese", 20,
+                Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionForFunctionType) -> {
+                    protectionForFunctionType.put(ArmorItem.Type.BOOTS, 2);
+                    protectionForFunctionType.put(ArmorItem.Type.LEGGINGS, 5);
+                    protectionForFunctionType.put(ArmorItem.Type.CHESTPLATE, 6);
+                    protectionForFunctionType.put(ArmorItem.Type.HELMET, 2);
+                }), 9, 0.0F, 0.0F, Ingredient.of(NFMTags.Items.INGOTS_MANGANESE));
         MetalArmorStatistic tinArmorStatistic = new MetalArmorStatistic("tin", 15,
                 Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionForFunctionType) -> {
                     protectionForFunctionType.put(ArmorItem.Type.BOOTS, 1);
@@ -75,13 +82,6 @@ public class MetalArmorStatisticsGenerator {
                     protectionForFunctionType.put(ArmorItem.Type.CHESTPLATE, 5);
                     protectionForFunctionType.put(ArmorItem.Type.HELMET, 2);
                 }), 12, 0.0F, 0.0F, Ingredient.of(NFMTags.Items.INGOTS_TIN));
-        MetalArmorStatistic manganeseArmorStatistic = new MetalArmorStatistic("manganese", 20,
-                Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionForFunctionType) -> {
-                    protectionForFunctionType.put(ArmorItem.Type.BOOTS, 2);
-                    protectionForFunctionType.put(ArmorItem.Type.LEGGINGS, 5);
-                    protectionForFunctionType.put(ArmorItem.Type.CHESTPLATE, 6);
-                    protectionForFunctionType.put(ArmorItem.Type.HELMET, 2);
-                }), 9, 0.0F, 0.0F, Ingredient.of(NFMTags.Items.INGOTS_TIN));
 
         MetalArmorStatistic angmallenArmorStatistic = alloyArmorStatisticAverager("angmallen", goldArmorStatistic, ironArmorStatistic);
         MetalArmorStatistic bronzeArmorStatistic = alloyArmorStatisticAverager("bronze", copperArmorStatistic, tinArmorStatistic);
@@ -96,6 +96,36 @@ public class MetalArmorStatisticsGenerator {
         metalArmorStatistics.add(steelArmorStatistic);
 
         // Precious Metals
+        MetalArmorStatistic platinumArmorStatistic = new MetalArmorStatistic("platinum", 20,
+                Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionForFunctionType) -> {
+                    protectionForFunctionType.put(ArmorItem.Type.BOOTS, 2);
+                    protectionForFunctionType.put(ArmorItem.Type.LEGGINGS, 5);
+                    protectionForFunctionType.put(ArmorItem.Type.CHESTPLATE, 6);
+                    protectionForFunctionType.put(ArmorItem.Type.HELMET, 2);
+                }), 11, 0.5F, 0.0F, Ingredient.of(NFMTags.Items.INGOTS_PLATINUM));
+        MetalArmorStatistic silverArmorStatistic = new MetalArmorStatistic("silver", 11,
+                Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionForFunctionType) -> {
+                    protectionForFunctionType.put(ArmorItem.Type.BOOTS, 1);
+                    protectionForFunctionType.put(ArmorItem.Type.LEGGINGS, 3);
+                    protectionForFunctionType.put(ArmorItem.Type.CHESTPLATE, 5);
+                    protectionForFunctionType.put(ArmorItem.Type.HELMET, 2);
+                }), 22, 0.0F, 0.0F, Ingredient.of(NFMTags.Items.INGOTS_SILVER));
+        MetalArmorStatistic zincArmorStatistic = new MetalArmorStatistic("zinc", 20,
+                Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionForFunctionType) -> {
+                    protectionForFunctionType.put(ArmorItem.Type.BOOTS, 1);
+                    protectionForFunctionType.put(ArmorItem.Type.LEGGINGS, 4);
+                    protectionForFunctionType.put(ArmorItem.Type.CHESTPLATE, 5);
+                    protectionForFunctionType.put(ArmorItem.Type.HELMET, 2);
+                }), 8, 0.0F, 0.0F, Ingredient.of(NFMTags.Items.INGOTS_ZINC));
+
+        MetalArmorStatistic brassArmorStatistic = alloyArmorStatisticAverager("brass", copperArmorStatistic, zincArmorStatistic);
+        MetalArmorStatistic electrumArmorStatistic = alloyArmorStatisticAverager("electrum", goldArmorStatistic, silverArmorStatistic);
+
+        metalArmorStatistics.add(platinumArmorStatistic);
+        metalArmorStatistics.add(silverArmorStatistic);
+        metalArmorStatistics.add(zincArmorStatistic);
+        metalArmorStatistics.add(brassArmorStatistic);
+        metalArmorStatistics.add(electrumArmorStatistic);
 
         // Fantasy Metals
 

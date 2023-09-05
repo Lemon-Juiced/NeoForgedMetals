@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/zinc"
+    }
+  },
+  "result": {
+    "item": "neoforged_metals:zinc_ingot",
+    "count": 1
+  }
+}

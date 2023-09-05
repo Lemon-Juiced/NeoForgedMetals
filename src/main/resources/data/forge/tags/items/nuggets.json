@@ -9,6 +9,11 @@
     "#forge:nuggets/bronze",
     "#forge:nuggets/damascus_steel",
     "#forge:nuggets/hepatizon",
-    "#forge:nuggets/steel"
+    "#forge:nuggets/steel",
+    "#forge:nuggets/platinum",
+    "#forge:nuggets/silver",
+    "#forge:nuggets/zinc",
+    "#forge:nuggets/brass",
+    "#forge:nuggets/electrum"
   ]
 }

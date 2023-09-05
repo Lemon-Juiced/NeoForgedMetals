@@ -7,6 +7,11 @@
     "neoforged_metals:bronze_block",
     "neoforged_metals:damascus_steel_block",
     "neoforged_metals:hepatizon_block",
-    "neoforged_metals:steel_block"
+    "neoforged_metals:steel_block",
+    "neoforged_metals:raw_platinum_block"    "neoforged_metals:platinum_ore"    "neoforged_metals:deepslate_platinum_ore"    "neoforged_metals:platinum_block",
+    "neoforged_metals:raw_silver_block"    "neoforged_metals:silver_ore"    "neoforged_metals:deepslate_silver_ore"    "neoforged_metals:silver_block",
+    "neoforged_metals:raw_zinc_block"    "neoforged_metals:zinc_ore"    "neoforged_metals:deepslate_zinc_ore"    "neoforged_metals:zinc_block",
+    "neoforged_metals:brass_block",
+    "neoforged_metals:electrum_block"
   ]
 }

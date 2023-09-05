@@ -26,6 +26,11 @@ public class MetalResourcesGenerator {
         metalResources.add(new MetalResource("steel", "base", 2, true, true, true));
 
         // Precious Metals
+        metalResources.add(new MetalResource("platinum", "precious", 3, false, true, true));
+        metalResources.add(new MetalResource("silver", "precious", 2, false, true, true));
+        metalResources.add(new MetalResource("zinc", "precious", 1, false, false, false));
+        metalResources.add(new MetalResource("brass", "precious", 1, true, true, true));
+        metalResources.add(new MetalResource("electrum", "precious", 2, true, true, true));
 
         // Fantasy Metals
 

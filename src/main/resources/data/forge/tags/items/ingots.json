@@ -7,6 +7,11 @@
     "#forge:ingots/bronze",
     "#forge:ingots/damascus_steel",
     "#forge:ingots/hepatizon",
-    "#forge:ingots/steel"
+    "#forge:ingots/steel",
+    "#forge:ingots/platinum",
+    "#forge:ingots/silver",
+    "#forge:ingots/zinc",
+    "#forge:ingots/brass",
+    "#forge:ingots/electrum"
   ]
 }

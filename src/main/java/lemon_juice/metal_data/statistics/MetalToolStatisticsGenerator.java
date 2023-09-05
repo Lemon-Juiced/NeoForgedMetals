@@ -42,6 +42,17 @@ public class MetalToolStatisticsGenerator {
         metalToolStatistics.add(steelToolStatistic);
 
         // Precious Metals
+        MetalToolStatistic platinumToolStatistic = new MetalToolStatistic("platinum", 3, 750, 6.0F, 2.0F, 16, Ingredient.of(NFMTags.Items.INGOTS_PLATINUM));
+        MetalToolStatistic silverToolStatistic = new MetalToolStatistic("silver", 2, 80, 10.0F, 0.0F, 18, Ingredient.of(NFMTags.Items.INGOTS_SILVER));
+        MetalToolStatistic zincToolStatistic = new MetalToolStatistic("zinc", 1, 128, 4.0F, 1.0F, 10, Ingredient.of(NFMTags.Items.INGOTS_BRASS));
+        MetalToolStatistic brassToolStatistic = alloyToolStatisticAverager("brass", copperToolStatistic, zincToolStatistic);
+        MetalToolStatistic electrumToolStatistic = alloyToolStatisticAverager("electrum", goldToolStatistic, silverToolStatistic);
+
+        metalToolStatistics.add(platinumToolStatistic);
+        metalToolStatistics.add(silverToolStatistic);
+        metalToolStatistics.add(zincToolStatistic);
+        metalToolStatistics.add(brassToolStatistic);
+        metalToolStatistics.add(electrumToolStatistic);
 
         // Fantasy Metals
 

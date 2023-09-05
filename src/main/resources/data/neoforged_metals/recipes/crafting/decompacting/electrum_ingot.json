@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "forge:ingots/electrum"
+        }
+    ],
+    "result": {
+        "item": "neoforged_metals:electrum_nugget",
+        "count": 9
+    }
+}

@@ -7,6 +7,11 @@
     "neoforged_metals:bronze_block",
     "neoforged_metals:damascus_steel_block",
     "neoforged_metals:hepatizon_block",
-    "neoforged_metals:steel_block"
+    "neoforged_metals:steel_block",
+    "neoforged_metals:platinum_block",
+    "neoforged_metals:silver_block",
+    "neoforged_metals:zinc_block",
+    "neoforged_metals:brass_block",
+    "neoforged_metals:electrum_block"
   ]
 }

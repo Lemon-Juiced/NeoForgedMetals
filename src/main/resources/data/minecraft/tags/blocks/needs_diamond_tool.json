@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-
+    "neoforged_metals:raw_platinum_block",
+    "neoforged_metals:platinum_ore",
+    "neoforged_metals:deepslate_platinum_ore",
+    "neoforged_metals:platinum_block"
   ]
 }

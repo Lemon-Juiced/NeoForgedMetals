@@ -8,6 +8,11 @@
     "neoforged_metals:angmallen_block",
     "neoforged_metals:damascus_steel_block",
     "neoforged_metals:hepatizon_block",
-    "neoforged_metals:steel_block"
+    "neoforged_metals:steel_block",
+    "neoforged_metals:raw_silver_block",
+    "neoforged_metals:silver_ore",
+    "neoforged_metals:deepslate_silver_ore",
+    "neoforged_metals:silver_block",
+    "neoforged_metals:electrum_block"
   ]
 }

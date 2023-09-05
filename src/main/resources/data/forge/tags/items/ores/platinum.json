@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:deepslate_platinum_ore",
+    "neoforged_metals:platinum_ore"
+  ]
+}

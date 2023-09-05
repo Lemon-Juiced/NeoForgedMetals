@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:ores/platinum"
+  },
+  "result": "neoforged_metals:platinum_ingot",
+  "experience": 0.1,
+  "cookingtime": 100
+}

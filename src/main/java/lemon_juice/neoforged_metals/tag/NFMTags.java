@@ -27,6 +27,13 @@ public class NFMTags {
         public static final TagKey<Item> INGOTS_HEPATIZON = forgeTag("ingots/hepatizon");
         public static final TagKey<Item> INGOTS_STEEL = forgeTag("ingots/steel");
 
+        // Precious Metals
+        public static final TagKey<Item> INGOTS_PLATINUM = forgeTag("ingots/platinum");
+        public static final TagKey<Item> INGOTS_SILVER = forgeTag("ingots/silver");
+        public static final TagKey<Item> INGOTS_ZINC = forgeTag("ingots/zinc");
+        public static final TagKey<Item> INGOTS_BRASS = forgeTag("ingots/brass");
+        public static final TagKey<Item> INGOTS_ELECTRUM = forgeTag("ingots/electrum");
+
         private static TagKey<Item> forgeTag(String name) {
             return ItemTags.create(new ResourceLocation("forge", name));
         }

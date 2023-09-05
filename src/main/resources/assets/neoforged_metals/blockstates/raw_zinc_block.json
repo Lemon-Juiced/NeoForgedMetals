@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "neoforged_metals:block/raw_zinc_block" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:deepslate_brass_ore",
+    "neoforged_metals:brass_ore"
+  ]
+}
