@@ -11,7 +11,7 @@ public class NFMShovelItem extends ShovelItem {
     private final int level;
     private final String tooltipInfo;
 
-    public NFMShovelItem(Tier tier, int speed, float damage, Properties properties, String tooltipInfo, int level) {
+    public NFMShovelItem(Tier tier, float speed, float damage, Properties properties, String tooltipInfo, int level) {
         super(tier, speed, damage, properties);
         this.tooltipInfo = tooltipInfo;
         this.level = level;

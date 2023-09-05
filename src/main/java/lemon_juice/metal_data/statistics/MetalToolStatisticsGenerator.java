@@ -30,7 +30,7 @@ public class MetalToolStatisticsGenerator {
         MetalToolStatistic manganeseToolStatistic = new MetalToolStatistic("manganese", 2, 750, 6.0F, 2.0F, 16, Ingredient.of(NFMTags.Items.INGOTS_MANGANESE));
         MetalToolStatistic tinToolStatistic = new MetalToolStatistic("tin", 2, 131, 4.0F, 2.0F, 9, Ingredient.of(NFMTags.Items.INGOTS_TIN));
         MetalToolStatistic angmallenToolStatistic = alloyToolStatisticAverager("angmallen", goldToolStatistic, ironToolStatistic);
-        MetalToolStatistic bronzeToolStatistic = alloyToolStatisticAverager("bronze", copperToolStatistic, tinToolStatistic);
+        MetalToolStatistic bronzeToolStatistic = new MetalToolStatistic("bronze", 2, 224, 6.0F, 2.0F, 14, Ingredient.of(NFMTags.Items.INGOTS_BRONZE));
         MetalToolStatistic damascusSteelToolStatistic = alloyToolStatisticAverager("damascus_steel", bronzeToolStatistic, ironToolStatistic);
         MetalToolStatistic hepatizonToolStatistic = alloyToolStatisticAverager("hepatizon", copperToolStatistic, goldToolStatistic);
         MetalToolStatistic steelToolStatistic = alloyToolStatisticAverager("steel", ironToolStatistic, manganeseToolStatistic);
@@ -42,9 +42,9 @@ public class MetalToolStatisticsGenerator {
         metalToolStatistics.add(steelToolStatistic);
 
         // Precious Metals
-        MetalToolStatistic platinumToolStatistic = new MetalToolStatistic("platinum", 3, 750, 6.0F, 2.0F, 16, Ingredient.of(NFMTags.Items.INGOTS_PLATINUM));
+        MetalToolStatistic platinumToolStatistic = new MetalToolStatistic("platinum", 3, 998, 6.0F, 2.0F, 16, Ingredient.of(NFMTags.Items.INGOTS_PLATINUM));
         MetalToolStatistic silverToolStatistic = new MetalToolStatistic("silver", 2, 80, 10.0F, 0.0F, 18, Ingredient.of(NFMTags.Items.INGOTS_SILVER));
-        MetalToolStatistic zincToolStatistic = new MetalToolStatistic("zinc", 1, 128, 4.0F, 1.0F, 10, Ingredient.of(NFMTags.Items.INGOTS_BRASS));
+        MetalToolStatistic zincToolStatistic = new MetalToolStatistic("zinc", 1, 128, 4.0F, 1.0F, 16, Ingredient.of(NFMTags.Items.INGOTS_BRASS));
         MetalToolStatistic brassToolStatistic = alloyToolStatisticAverager("brass", copperToolStatistic, zincToolStatistic);
         MetalToolStatistic electrumToolStatistic = alloyToolStatisticAverager("electrum", goldToolStatistic, silverToolStatistic);
 
