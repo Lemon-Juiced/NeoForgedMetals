@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "neoforged_metals:angmallen_helmet",
+    "neoforged_metals:angmallen_chestplate",
+    "neoforged_metals:angmallen_leggings",
+    "neoforged_metals:angmallen_boots",
+    "neoforged_metals:bronze_helmet",
+    "neoforged_metals:bronze_chestplate",
+    "neoforged_metals:bronze_leggings",
+    "neoforged_metals:bronze_boots",
+    "neoforged_metals:damascus_steel_helmet",
+    "neoforged_metals:damascus_steel_chestplate",
+    "neoforged_metals:damascus_steel_leggings",
+    "neoforged_metals:damascus_steel_boots",
+    "neoforged_metals:hepatizon_helmet",
+    "neoforged_metals:hepatizon_chestplate",
+    "neoforged_metals:hepatizon_leggings",
+    "neoforged_metals:hepatizon_boots",
+    "neoforged_metals:steel_helmet",
+    "neoforged_metals:steel_chestplate",
+    "neoforged_metals:steel_leggings",
+    "neoforged_metals:steel_boots"
+  ]
+}
