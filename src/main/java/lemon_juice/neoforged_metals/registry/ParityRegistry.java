@@ -17,7 +17,5 @@ public class ParityRegistry {
     public static RegistryObject<Item> NETHERITE_NUGGET = NFMItems.ITEMS.register("netherite_nugget", () -> new NuggetItem(new Item.Properties(), "vanilla"));
     public static RegistryObject<Item> NETHERITE_DUST = NFMItems.ITEMS.register("netherite_dust", () -> new DustItem(new Item.Properties(), "vanilla"));
 
-    public static void registerParity(){
-        // Does nothing other than register all the above items
-    }
+    public static void registerParity(){ /* Does nothing other than register all the above items */ }
 }

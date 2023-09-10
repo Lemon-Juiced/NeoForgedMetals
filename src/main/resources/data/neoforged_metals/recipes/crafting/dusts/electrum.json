@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:dusts/bronze"
+      "tag": "forge:dusts/gold"
     },
     {
-      "tag": "forge:dusts/gold"
+      "tag": "forge:dusts/silver"
     }
   ],
   "result": {
-    "item": "neoforged_metals:hepatizon_dust",
+    "item": "neoforged_metals:electrum_dust",
     "count": 2
   }
 }
